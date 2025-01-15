@@ -1,0 +1,280 @@
+/* General body styles */
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #d16ba5, #d975af, #e27fb9, #ea89c4, #f393ce, #f79ed6, #faa8de, #feb3e6, #fec0ec, #feccf2, #fed8f7, #ffe4fb);
+  overflow: hidden;
+  font-family: "Loved by the King", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Center container */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  animation: hoverUpDown 2s ease-in-out infinite;
+}
+
+/* Diagonal tape with glass effect */
+.tape {
+  position: absolute;
+  width: 200%;
+  height: 50px;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Glass effect */
+  opacity:0.7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* Scrolling NO ENTRY text */
+.tape::before {
+  content: "ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ";
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-text 80s linear infinite;
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Glass container with fade-in animation */
+.glasscont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 550px;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border-radius: 30px;
+  text-align: center;
+  animation: fadeInCard 3s ease-in-out forwards; /* Fade-in and hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%); /* Slightly smaller at the start */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Original position and size */
+  }
+}
+
+
+
+
+.poverlap{
+   position: absolute;
+   top:20%;
+   left:25%;
+   margin:auto;
+   transform:translate(-50% -50%);
+   width:60%;
+   height:60%;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   display:flex;
+  color:white;
+  font-family: "Loved by the King", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:19px;
+}
+
+h4{
+  border-bottom: 2px solid white;
+  font-size:20px;
+}
+
+.one{
+  text-decoration: underline;
+}
+.star-1 {
+  position: absolute;
+  top: 10%;  /* Random vertical position */
+  left: 5%;  /* Random horizontal position */
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.star-2 {
+  position: absolute;
+  top: 15%;  /* Random vertical position */
+  left: 8%;  /* Random horizontal position */
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.star-3 {
+  position: absolute;
+  top: 12%;  /* Random vertical position */
+  left: 3%;  /* Random horizontal position */
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.star-4 {
+  position: absolute;
+  top: 75%;  /* Random vertical position */
+  left: 90%;  /* Random horizontal position */
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.star-5 {
+  position: absolute;
+  top: 80%;  /* Random vertical position */
+  left: 85%;  /* Random horizontal position */
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.star-6 {
+  position: absolute;
+  top: 70%;  /* Random vertical position */
+  left: 88%;  /* Random horizontal position */
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+.hrt2{
+  position: absolute;
+  top: 72%;
+  /* Random vertical position */
+  left: 92%;
+  /* Random horizontal position */
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+
+.hrt1{
+  position: absolute;
+  top: 15%;  /* Random vertical position */
+  left: 2%;  /* Random horizontal position */
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 1;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Stay at original position after fade-in */
+  }
+}
+
+/* Hover up and down animation with reduced travel */
+@keyframes hoverUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Original position */
+  }
+  50% {
+    transform: translateY(-5px); /* Reduced move up distance */
+  }
+}
+
+/* Initial state for all stars: invisible */
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6 ,  .hrt1 , .hrt2{
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 3s ease-in-out forwards, hoverUpDown 2s ease-in-out infinite;
+}
+
+/* Apply delay for staggered fade-in */
+.star-1 {
+  animation-delay: 0s, 3s; /* Fade-in starts immediately, hover starts after fade-in */
+}
+
+.star-2 {
+  animation-delay: 0.5s, 3.5s;
+}
+
+.star-3 {
+  animation-delay: 1s, 4s;
+}
+
+.star-4 {
+  animation-delay: 1.5s, 4.5s;
+}
+
+.star-5 {
+  animation-delay: 2s, 5s;
+}
+
+.star-6 {
+  animation-delay: 2.5s, 5.5s;
+}
+.hrt1 , .hrt2{
+  animation-delay : 1s , 2s;
+}
+
+.star-1 svg,
+.star-2 svg,
+.star-3 svg,
+.star-4 svg,
+.star-5 svg,
+.star-6 svg {
+  fill: #ffffff; /* Make stars white */
+}
+
+.hrt1 , .hrt2{
+  color : white;
+}
