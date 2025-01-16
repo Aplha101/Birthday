@@ -30,9 +30,13 @@ body {
   align-items: center;
   overflow: hidden;
   
-  animation: hoverUpDown 2s ease-in-out infinite;
 }
-
+ .hov{
+   height:100%;
+   width:100%;
+   position: relative;
+  animation: hoverUpDown 2s ease-in-out infinite;
+ }
 /* Diagonal tape with glass effect */
 .tape {
   position: absolute;
@@ -47,20 +51,51 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
   border-radius: 10px; /* Rounded edges */
 }
-
-/* Scrolling NO ENTRY text */
-.tape::before {
-  content: "ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ";
+.tapeone {
+  position: absolute;
+  width: 200%;
+  height: 50px;
+  transform: rotate(30deg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Glass effect */
+  opacity:0.7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px; /* Rounded edges */
+}
+.tapeone::before{
+  content: "HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 HBD<3 ";
+  
   font-size: 2rem;
   color: white;
   font-weight: bold;
   letter-spacing: 10px;
   white-space: nowrap;
   position: absolute;
-  animation: scroll-text 80s linear infinite;
+  animation: scroll-textone 180s linear infinite;
+}
+/* Scrolling NO ENTRY text */
+.tape::before {
+  content: "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ILY<3 ";
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-text 120s linear infinite;
 }
 
 /* Infinite scrolling animation */
+@keyframes scroll-textone{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 @keyframes scroll-text {
   0% {
     transform: translateX(0);
@@ -96,9 +131,6 @@ body {
     transform: translate(-50%, -50%); /* Original position and size */
   }
 }
-
-
-
 
 .poverlap{
    position: absolute;
@@ -231,40 +263,45 @@ h4{
     transform: translateY(-5px); /* Reduced move up distance */
   }
 }
-
-/* Initial state for all stars: invisible */
-.star-1, .star-2, .star-3, .star-4, .star-5, .star-6 ,  .hrt1 , .hrt2{
+/* Initial state for all stars and hearts */
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6, .hrt1, .hrt2 {
   opacity: 0; /* Initially hidden */
   animation: fadeIn 3s ease-in-out forwards, hoverUpDown 2s ease-in-out infinite;
 }
 
-/* Apply delay for staggered fade-in */
+/* Apply unique delay for staggered fade-in and hover */
 .star-1 {
-  animation-delay: 0s, 3s; /* Fade-in starts immediately, hover starts after fade-in */
+  animation-delay: 0s, 0s;
 }
 
 .star-2 {
-  animation-delay: 0.5s, 3.5s;
+  animation-delay: 0.5s, 0.5s;
 }
 
 .star-3 {
-  animation-delay: 1s, 4s;
+  animation-delay: 1s, 1.5s;
 }
 
 .star-4 {
-  animation-delay: 1.5s, 4.5s;
+  animation-delay: 1.5s, 1.5s;
 }
 
 .star-5 {
-  animation-delay: 2s, 5s;
+  animation-delay: 2s, 2s;
 }
 
 .star-6 {
-  animation-delay: 2.5s, 5.5s;
+  animation-delay: 2.5s, 2.5s;
 }
-.hrt1 , .hrt2{
-  animation-delay : 1s , 2s;
+
+.hrt1 {
+  animation-delay: 3s, 4s;
 }
+
+.hrt2 {
+  animation-delay: 3.8s, 3.8s;
+}
+
 
 .star-1 svg,
 .star-2 svg,
