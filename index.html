@@ -66,6 +66,12 @@
    }, step);
  }
  counter("count1",  0, 18000000, 2000);
+ 
+ 
+ if (!sessionStorage.getItem('reloaded')) {
+    sessionStorage.setItem('reloaded', 'true'); // Mark that the page has been reloaded
+    location.reload(); // Reload the page
+  }
 </script> 
 </html>
 
