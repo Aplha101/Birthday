@@ -73,7 +73,7 @@ body {
   letter-spacing: 10px;
   white-space: nowrap;
   position: absolute;
-  animation: scroll-textone 180s linear infinite;
+  animation: scroll-textone 160s linear infinite;
 }
 /* Scrolling NO ENTRY text */
 .tape::before {
