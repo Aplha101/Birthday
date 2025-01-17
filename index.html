@@ -78,7 +78,7 @@
   }
   
   // Create an audio object
-const audio = new Audio('/UEditor_Untitled_Project_V1_1.mp3');
+const audio = new Audio('UEditor_Untitled_Project_V1_1.mp3');
 
 // Set audio properties
 audio.loop = true; // Enable looping
@@ -88,12 +88,12 @@ function playAudioOnMouseMove() {
   audio.play().then(() => {
     console.log("Audio is playing");
     // Remove the event listener once the audio starts playing
-    document.removeEventListener('click', playAudioOnMouseMove);
+    document.removeEventListener('mousemove', playAudioOnMouseMove);
   })
 }
 
 // Add the event listener
-document.addEventListener('click', playAudioOnMouseMove);
+document.addEventListener('mousemove', playAudioOnMouseMove);
 
 </script> 
 </html>
