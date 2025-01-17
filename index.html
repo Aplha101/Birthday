@@ -88,15 +88,12 @@ function playAudioOnMouseMove() {
   audio.play().then(() => {
     console.log("Audio is playing");
     // Remove the event listener once the audio starts playing
-    document.removeEventListener('mousemove', playAudioOnMouseMove);
-  }).catch((error) => {
-    console.error("Audio play failed:", error);
-  });
+    document.removeEventListener('click', playAudioOnMouseMove);
+  })
 }
 
 // Add the event listener
-document.addEventListener('mousemove', playAudioOnMouseMove);
+document.addEventListener('click', playAudioOnMouseMove);
 
 </script> 
-<script src="main.js" type="text/javascript" charset="utf-8"></script>
 </html>
